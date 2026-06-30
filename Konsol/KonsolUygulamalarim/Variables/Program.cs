@@ -70,6 +70,8 @@ namespace Variables
             // c. Mantıksal veri Tipi : bool - (true/false)
             // d. Enum: Enumerator : Numaralayıcı (Seçenek Listesi yapar)
             // e. Struct (yapı) : Bir yada birden fazla farklı bilgiyi bir arada tutabilen kendi tipimizi tanımlamak için kullanabileceğimiz değişken tipidir. Max 16 byte için önerilir.
+            // f. Tarih/Saat veri tipi
+            // g. char - karakter veri tipi: içerisinde tek 1 tane karakter tutar.
 
             // a.Tamsayılar:
             byte vizeNotu;
@@ -94,11 +96,6 @@ namespace Variables
             bool cevap = 5 < 3;
             bool kontrol = fiyat <= 0;
 
-            // DateTime  tipi: Tarih tipinde verier tutmak için kullanılır.
-
-            DateTime tarih = Convert.ToDateTime("2026-06-01");
-            DateTime satisTarihi = DateTime.MinValue;
-            DateTime kayitTarihi = new DateTime(2026,3,19);
 
             //d.enum : numaralandırıcı - seçenek listesi (özel tip)
 
@@ -123,9 +120,23 @@ namespace Variables
             urun1.UrunAd = "Bisküvi";
             urun1.Fiyat = 55.75;
 
-            Console.WriteLine("---------------------------------");
+            //f. DateTime  tipi: Tarih tipinde verier tutmak için kullanılır.
 
-            int vize=0,final=0;
+            DateTime tarih = Convert.ToDateTime("2026-06-01");
+            DateTime satisTarihi = DateTime.MinValue;
+            DateTime kayitTarihi = new DateTime(2026, 3, 19);
+
+
+            //g. char
+
+            char karakter = 'A';
+            char k2 = '6';
+            char k3 = (char)169;
+
+
+            Console.WriteLine(k3 + " ---------------------------------");
+
+            int vize = 0, final = 0;
             double sonuc = 0;
 
             Console.Write("Vize Notunu Giriniz:");
@@ -137,9 +148,9 @@ namespace Variables
             sonuc = vize * 0.4 + final * 0.6;
 
             if (sonuc < 70)
-             Console.WriteLine("KÖTÜ"); 
+                Console.WriteLine("KÖTÜ");
             else
-             Console.WriteLine("İYİ");
+                Console.WriteLine("İYİ");
 
             Console.WriteLine("-----------------------------------------");
 
@@ -156,6 +167,27 @@ namespace Variables
             Console.WriteLine("{0} - {1} - {2}", ceket.UrunAd, ceket.Fiyat, ceket.UrunRengi);
 
             Console.WriteLine($"{ceket.UrunAd} - {ceket.Fiyat} - {ceket.UrunRengi}");
+
+
+            Console.WriteLine("-------------------------------------------------------------------");
+
+
+            // 2. Referans Tipli Değişkenler : İçlerinde veri yerine, verinin bellekteki yerinin adresini tutan değişkenlerdir. Değişkenin kendisi belleğin "stack" kısmındadır. İşaret ettiği veri ise belleğin "heap" bölgesindedir. String, array, kolleksiyonlar, class, delegate, interface
+
+            string adSoyad = "Ali Ak";
+            string adres = "Bakçelievler";
+            string secim = "A";
+
+
+            //Array : dizi - içerisinde aynı tipte 1 den fazla veri taşıyabilen yapılardır.
+
+            int[] sayilar = { 5, 25, 5000, 3, 3000000, 18 };
+
+            string[] iller = new string[82];
+            iller[5] = "Adıyaman";
+
+            iller[34] = "istanbul";
+            iller[0] = "Boş";
 
 
 

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -179,15 +180,88 @@ namespace Variables
             string secim = "A";
 
 
-            //Array : dizi - içerisinde aynı tipte 1 den fazla veri taşıyabilen yapılardır.
+            //Array : dizi - içerisinde aynı tipte 1 den fazla veri taşıyabilen yapılardır. Tip güvenlidir. İlk değer dizi tanımlanırken verilebilir, ya da sonradan dizinin eleman numarası (index numarası) belirtilerek te değer atanabilir. index sırası 0'dan başlar ve en büyük index numarası, dizinin eleman sayısının 1 eksiği kadar olabilir. index numarası eksi değer alamaz, eleman sayısına eşit ya da büyük olamaz. Dizi elemanları sıralanabilir, sıralama terse çevrilebilir, tüm liste temizlenebilir, dizi elemanları içerisinde arama yapılabilir. 
 
             int[] sayilar = { 5, 25, 5000, 3, 3000000, 18 };
 
             string[] iller = new string[82];
+
             iller[5] = "Adıyaman";
 
             iller[34] = "istanbul";
             iller[0] = "Boş";
+
+            iller[81] = "Düzce";
+
+
+            int[] numbers = sayilar;
+
+            numbers[0] = 50;
+
+            Console.WriteLine(sayilar[0]);
+
+            double[] fiyatlar = new double[50];
+
+            fiyatlar[0] = 150.75;
+
+            Array.Sort(sayilar);
+            Console.WriteLine(sayilar[0]);
+            Array.Reverse(sayilar);
+            Console.WriteLine(sayilar[0]);
+
+            Console.WriteLine(iller.Count());
+
+            Array.Clear(sayilar,0,sayilar.Length);
+
+            Array.Resize(ref iller, 92);
+
+            bool varMi = iller.Contains("Ankara");
+
+            if (!varMi)
+            {
+                iller[6] = "Ankara";
+            }
+
+            if (!iller.Contains("Adana"))
+            {
+                iller[1] = "Adana";
+            }
+
+            Console.WriteLine(sayilar.ElementAt(5));
+            Console.WriteLine(sayilar[5]);          
+            
+            // Kolleksiyon : İçerisinde birden fazla değer taşıyabilen nesnelerdir. ArrayList, SortedList, HashTable
+
+            ArrayList liste1 = new ArrayList();
+
+            liste1.Add(12321);
+            liste1.Add("Antalya");
+            liste1.Add(155.50);
+            liste1.Add(true);
+            liste1.Add(ceket);
+
+            liste1[1] = "Manavgat";
+
+            Console.WriteLine(liste1[0]);
+
+            liste1.Remove(155.50);
+            liste1.RemoveAt(0);
+          //  liste1.Sort();
+          //  Console.WriteLine(liste1.Count);
+
+            bool sonuc2 = liste1.Contains("Antalya");
+
+            SortedList ogrenciler = new SortedList();
+
+            ogrenciler.Add(10, "Kemal");
+            ogrenciler.Add(5, "Cemal");
+            ogrenciler.Add(75, "Deniz");
+            ogrenciler.Add(30, "Murat");
+
+            foreach (var item in ogrenciler.Keys)
+            {
+                Console.WriteLine(ogrenciler[item]);
+            }
 
 
 

@@ -9,7 +9,7 @@ namespace Variables
 {
     enum Renkler
     {
-        Mavi=1,
+        Mavi = 1,
         Kırmızı,
         Sarı,
         Turuncu,
@@ -18,15 +18,15 @@ namespace Variables
     }
 
     struct Urun
-    { 
-       internal int UrunKod;
-       internal string UrunAd;
-       internal double Fiyat;
-       internal Renkler UrunRengi;
+    {
+        internal int UrunKod;
+        internal string UrunAd;
+        internal double Fiyat;
+        internal Renkler UrunRengi;
     }
 
     struct Ogrenci
-    { 
+    {
         public int OgrenciKod;
         public string OgrenciAd;
         public int OgrenciSinifi;
@@ -38,23 +38,23 @@ namespace Variables
     {
         enum Hobiler
         {
-            Kitap=100, Resim=200, Müzik=150, Satranc=5, Gezi
+            Kitap = 100, Resim = 200, Müzik = 150, Satranc = 5, Gezi
         }
 
         enum Status
-        { 
-            YeniKayit=0,Mezun=1,KayitDondurdu=3,KaydiSilindi=5        
+        {
+            YeniKayit = 0, Mezun = 1, KayitDondurdu = 3, KaydiSilindi = 5
         }
 
         enum Mezuniyet
-        { 
-            ilkOkul=1,
+        {
+            ilkOkul = 1,
             OrtaOkul,
             Lise,
             Yüksekokul,
             Lisans,
             Master,
-            Doktora   
+            Doktora
         }
 
 
@@ -211,7 +211,7 @@ namespace Variables
 
             Console.WriteLine(iller.Count());
 
-            Array.Clear(sayilar,0,sayilar.Length);
+            Array.Clear(sayilar, 0, sayilar.Length);
 
             Array.Resize(ref iller, 92);
 
@@ -228,8 +228,8 @@ namespace Variables
             }
 
             Console.WriteLine(sayilar.ElementAt(5));
-            Console.WriteLine(sayilar[5]);          
-            
+            Console.WriteLine(sayilar[5]);
+
             // Kolleksiyon : İçerisinde birden fazla değer taşıyabilen nesnelerdir. ArrayList, SortedList, HashTable
 
             ArrayList liste1 = new ArrayList();
@@ -246,8 +246,8 @@ namespace Variables
 
             liste1.Remove(155.50);
             liste1.RemoveAt(0);
-          //  liste1.Sort();
-          //  Console.WriteLine(liste1.Count);
+            //  liste1.Sort();
+            //  Console.WriteLine(liste1.Count);
 
             bool sonuc2 = liste1.Contains("Antalya");
 
@@ -258,11 +258,67 @@ namespace Variables
             ogrenciler.Add(75, "Deniz");
             ogrenciler.Add(30, "Murat");
 
+            Console.WriteLine(ogrenciler[10]);
+
+            Console.WriteLine("-------- foreach - ogrenciler.Keys -----------------");
+
             foreach (var item in ogrenciler.Keys)
             {
                 Console.WriteLine(ogrenciler[item]);
             }
 
+            Console.WriteLine("---------- foreach - liste1 --------------------");
+
+            foreach (var deger in liste1)
+            {
+                if (deger.GetType() == typeof(Urun)) // reflection 
+                {
+                    Urun u = (Urun)deger;
+                    Console.WriteLine(u.UrunAd);
+                }
+                else
+                {
+                    Console.WriteLine(deger);
+                }
+            }
+
+            // Generic Kolleksiyonlar : İstenilen tipe göre çalışacak şekilde yaratılan listeledir. Tip güvenlidirler. ArrayList yerine List/IList/IEnumerable, SortedList yerine Dictionary generikleri kullanılarak tip güvenli listeler oluşturulabilir.
+
+            List<int> vizeNotlari = new List<int>();
+
+            try
+            {
+                int deger = 0;
+                bool donusumSonucu = false;
+
+                donusumSonucu = int.TryParse("ali", out deger);
+
+                if (donusumSonucu)
+                {
+                    vizeNotlari.Add(deger);
+                }
+                //vizeNotlari.Add(Convert.ToInt32("ali")); // bu kod hata üretir.
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                // vizeNotlari.Add(0);
+            }
+
+            vizeNotlari.Add(78);
+            vizeNotlari.Add(15);
+
+
+            double ortalama=0, toplam=0;
+
+            foreach (int item in vizeNotlari)
+            { 
+                toplam += item;
+            }
+
+            ortalama = toplam/vizeNotlari.Count;
+
+            Console.WriteLine($"Not ortalaması={ortalama}");
 
 
             Console.ReadKey();

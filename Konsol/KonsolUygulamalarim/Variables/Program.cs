@@ -60,266 +60,342 @@ namespace Variables
 
         static void Main(string[] args)
         {
-            // Variables(Değişkenler) : Değişken, bilgisayarın RAM belleğinde programın çalışması esnasında geçici süreliğine bekletilmesi gereken bilgileri tutmak için kullanılan bellek alanlarıdır. Bu alanlar içerisinde, sayısal, metinsel, tarihsel, mantıksal, v.b. tipinde veriler tutulabilir ve ihtiyaç duyuldukça tutulan verilen bu bellek alanlarından tekrar çağırılarak kullanılır. Her farklı tipteki veri için, farklı tipte değişken kullanılır.
+            #region Değişkenler Ders Notu
+            //// Variables(Değişkenler) : Değişken, bilgisayarın RAM belleğinde programın çalışması esnasında geçici süreliğine bekletilmesi gereken bilgileri tutmak için kullanılan bellek alanlarıdır. Bu alanlar içerisinde, sayısal, metinsel, tarihsel, mantıksal, v.b. tipinde veriler tutulabilir ve ihtiyaç duyuldukça tutulan verilen bu bellek alanlarından tekrar çağırılarak kullanılır. Her farklı tipteki veri için, farklı tipte değişken kullanılır.
 
-            // Değişken Tipleri :
-            // Verinin Tutulduğu yer ve tutulma biçimine göre temel olarak 2 tip değişken vardır. Değer Tipli (Value Type) ve Referans Tipli (Reference Type) değişkenler.
+            //// Değişken Tipleri :
+            //// Verinin Tutulduğu yer ve tutulma biçimine göre temel olarak 2 tip değişken vardır. Değer Tipli (Value Type) ve Referans Tipli (Reference Type) değişkenler.
 
-            // 1. Değer Tipli değişkenler: Belleğin stack kısmında oluşturulurlar ve içlerinde verinin kendisini tutarlar. Değer Tipli değişkenler, Tam Sayı Değişkenler, Ondalıklı Sayı Değişkenleri, Mantıksal (Boolean) değişken, Enum, Struct v.b. Sayılabilir. Değer tipli değişkenlere değer ataması yapılmadan kullanılamaz.
-            // a. Tam Sayı Değişken Tipleri: byte, short, int, long
-            // b. Ondalıklı sayı tipleri : float, double, decimal
-            // c. Mantıksal veri Tipi : bool - (true/false)
-            // d. Enum: Enumerator : Numaralayıcı (Seçenek Listesi yapar)
-            // e. Struct (yapı) : Bir yada birden fazla farklı bilgiyi bir arada tutabilen kendi tipimizi tanımlamak için kullanabileceğimiz değişken tipidir. Max 16 byte için önerilir.
-            // f. Tarih/Saat veri tipi
-            // g. char - karakter veri tipi: içerisinde tek 1 tane karakter tutar.
+            //// 1. Değer Tipli değişkenler: Belleğin stack kısmında oluşturulurlar ve içlerinde verinin kendisini tutarlar. Değer Tipli değişkenler, Tam Sayı Değişkenler, Ondalıklı Sayı Değişkenleri, Mantıksal (Boolean) değişken, Enum, Struct v.b. Sayılabilir. Değer tipli değişkenlere değer ataması yapılmadan kullanılamaz.
+            //// a. Tam Sayı Değişken Tipleri: byte, short, int, long
+            //// b. Ondalıklı sayı tipleri : float, double, decimal
+            //// c. Mantıksal veri Tipi : bool - (true/false)
+            //// d. Enum: Enumerator : Numaralayıcı (Seçenek Listesi yapar)
+            //// e. Struct (yapı) : Bir yada birden fazla farklı bilgiyi bir arada tutabilen kendi tipimizi tanımlamak için kullanabileceğimiz değişken tipidir. Max 16 byte için önerilir.
+            //// f. Tarih/Saat veri tipi
+            //// g. char - karakter veri tipi: içerisinde tek 1 tane karakter tutar.
 
-            // a.Tamsayılar:
-            byte vizeNotu;
-            // Console.WriteLine(vizeNotu); Değer ataması henüz yapılmadığı için hata verir.
+            //// a.Tamsayılar:
+            //byte vizeNotu;
+            //// Console.WriteLine(vizeNotu); Değer ataması henüz yapılmadığı için hata verir.
+            #endregion
 
-            vizeNotu = 0;
-            Console.WriteLine(vizeNotu);
+            #region Kod Örnekleri
+            //vizeNotu = 0;
+            //Console.WriteLine(vizeNotu);
 
-            ushort maas = 60000;
-            short maas2 = -32000;
-            int maas3 = -60000;
+            //ushort maas = 60000;
+            //short maas2 = -32000;
+            //int maas3 = -60000;
 
-            long fiyat = 10000000000;
+            //long fiyat = 10000000000;
 
-            //b. Ondalıklı Sayılar:
-            float f = 100.1f;
-            double urunFiyati = (double)maas;
-            decimal not = 3.67M;
+            ////b. Ondalıklı Sayılar:
+            //float f = 100.1f;
+            //double urunFiyati = (double)maas;
+            //decimal not = 3.67M;
 
-            //c. boolean - true/false
-            bool devam = true;
-            bool cevap = 5 < 3;
-            bool kontrol = fiyat <= 0;
+            ////c. boolean - true/false
+            //bool devam = true;
+            //bool cevap = 5 < 3;
+            //bool kontrol = fiyat <= 0;
 
 
-            //d.enum : numaralandırıcı - seçenek listesi (özel tip)
+            ////d.enum : numaralandırıcı - seçenek listesi (özel tip)
 
-            Hobiler ogrenciHobi = Hobiler.Satranc;
+            //Hobiler ogrenciHobi = Hobiler.Satranc;
 
-            // Status s = Status.YeniKayit;
+            //// Status s = Status.YeniKayit;
 
-            int durum = 5;
+            //int durum = 5;
 
-            bool esitMi = durum == (int)Status.KaydiSilindi;
+            //bool esitMi = durum == (int)Status.KaydiSilindi;
 
-            if (esitMi)
+            //if (esitMi)
+            //{
+
+            //}
+
+            ////e.struct (Yapı) : Özel tip tanımlamk için kullanılır.
+
+            //Urun urun1 = new Urun();
+
+            //urun1.UrunKod = 1;
+            //urun1.UrunAd = "Bisküvi";
+            //urun1.Fiyat = 55.75;
+
+            ////f. DateTime  tipi: Tarih tipinde verier tutmak için kullanılır.
+
+            //DateTime tarih = Convert.ToDateTime("2026-06-01");
+            //DateTime satisTarihi = DateTime.MinValue;
+            //DateTime kayitTarihi = new DateTime(2026, 3, 19);
+
+
+            ////g. char
+
+            //char karakter = 'A';
+            //char k2 = '6';
+            //char k3 = (char)169;
+
+
+            //Console.WriteLine(k3 + " ---------------------------------");
+
+            //int vize = 0, final = 0;
+            //double sonuc = 0;
+
+            //Console.Write("Vize Notunu Giriniz:");
+            //vize = Convert.ToInt32(Console.ReadLine());
+
+            //Console.Write("Final Notunu Giriniz:");
+            //final = Convert.ToInt32(Console.ReadLine());
+
+            //sonuc = vize * 0.4 + final * 0.6;
+
+            //if (sonuc < 70)
+            //    Console.WriteLine("KÖTÜ");
+            //else
+            //    Console.WriteLine("İYİ");
+
+            //Console.WriteLine("-----------------------------------------");
+
+            //Urun ceket = new Urun();
+
+            //ceket.UrunKod = 128;
+            //ceket.UrunAd = "kanvas kareli ceket siyah";
+            //ceket.Fiyat = 11250.5;
+            ////  ceket.UrunRengi = Renkler.Siyah;
+            //ceket.UrunRengi = (Renkler)6;
+
+            //Console.WriteLine(ceket.UrunAd + " - " + ceket.Fiyat + " - " + ceket.UrunRengi);
+
+            //Console.WriteLine("{0} - {1} - {2}", ceket.UrunAd, ceket.Fiyat, ceket.UrunRengi);
+
+            //Console.WriteLine($"{ceket.UrunAd} - {ceket.Fiyat} - {ceket.UrunRengi}");
+
+
+            //Console.WriteLine("-------------------------------------------------------------------");
+
+            #endregion
+
+            #region Referans Tipleri
+            //// 2. Referans Tipli Değişkenler : İçlerinde veri yerine, verinin bellekteki yerinin adresini tutan değişkenlerdir. Değişkenin kendisi belleğin "stack" kısmındadır. İşaret ettiği veri ise belleğin "heap" bölgesindedir. String, array, kolleksiyonlar, class, delegate, interface
+
+            //string adSoyad = "Ali Ak";
+            //string adres = "Bakçelievler";
+            //string secim = "A";
+
+
+            ////Array : dizi - içerisinde aynı tipte 1 den fazla veri taşıyabilen yapılardır. Tip güvenlidir. İlk değer dizi tanımlanırken verilebilir, ya da sonradan dizinin eleman numarası (index numarası) belirtilerek te değer atanabilir. index sırası 0'dan başlar ve en büyük index numarası, dizinin eleman sayısının 1 eksiği kadar olabilir. index numarası eksi değer alamaz, eleman sayısına eşit ya da büyük olamaz. Dizi elemanları sıralanabilir, sıralama terse çevrilebilir, tüm liste temizlenebilir, dizi elemanları içerisinde arama yapılabilir. 
+            #endregion
+
+            #region Kod Örnekleri
+            //int[] sayilar = { 5, 25, 5000, 3, 3000000, 18 };
+
+            //string[] iller = new string[82];
+
+            //iller[5] = "Adıyaman";
+
+            //iller[34] = "istanbul";
+            //iller[0] = "Boş";
+
+            //iller[81] = "Düzce";
+
+
+            //int[] numbers = sayilar;
+
+            //numbers[0] = 50;
+
+            //Console.WriteLine(sayilar[0]);
+
+            //double[] fiyatlar = new double[50];
+
+            //fiyatlar[0] = 150.75;
+
+            //Array.Sort(sayilar);
+            //Console.WriteLine(sayilar[0]);
+            //Array.Reverse(sayilar);
+            //Console.WriteLine(sayilar[0]);
+
+            //Console.WriteLine(iller.Count());
+
+            //Array.Clear(sayilar, 0, sayilar.Length);
+
+            //Array.Resize(ref iller, 92);
+
+            //bool varMi = iller.Contains("Ankara");
+
+            //if (!varMi)
+            //{
+            //    iller[6] = "Ankara";
+            //}
+
+            //if (!iller.Contains("Adana"))
+            //{
+            //    iller[1] = "Adana";
+            //}
+
+            //Console.WriteLine(sayilar.ElementAt(5));
+            //Console.WriteLine(sayilar[5]);
+
+            //// Kolleksiyon : İçerisinde birden fazla değer taşıyabilen nesnelerdir. ArrayList, SortedList, HashTable
+
+            //ArrayList liste1 = new ArrayList();
+
+            //liste1.Add(12321);
+            //liste1.Add("Antalya");
+            //liste1.Add(155.50);
+            //liste1.Add(true);
+            //liste1.Add(ceket);
+
+            //liste1[1] = "Manavgat";
+
+            //Console.WriteLine(liste1[0]);
+
+            //liste1.Remove(155.50);
+            //liste1.RemoveAt(0);
+            ////  liste1.Sort();
+            ////  Console.WriteLine(liste1.Count);
+
+            //bool sonuc2 = liste1.Contains("Antalya");
+
+            //SortedList ogrenciler = new SortedList();
+
+            //ogrenciler.Add(10, "Kemal");
+            //ogrenciler.Add(5, "Cemal");
+            //ogrenciler.Add(75, "Deniz");
+            //ogrenciler.Add(30, "Murat");
+
+            //Console.WriteLine(ogrenciler[10]);
+
+            //Console.WriteLine("-------- foreach - ogrenciler.Keys -----------------");
+
+            //foreach (var item in ogrenciler.Keys)
+            //{
+            //    Console.WriteLine(ogrenciler[item]);
+            //}
+
+            //Console.WriteLine("---------- foreach - liste1 --------------------");
+
+            //foreach (var deger in liste1)
+            //{
+            //    if (deger.GetType() == typeof(Urun)) // reflection 
+            //    {
+            //        Urun u = (Urun)deger;
+            //        Console.WriteLine(u.UrunAd);
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine(deger);
+            //    }
+            //}
+
+            //Hashtable araclar = new Hashtable();
+
+            //araclar.Add("34 AAA 333", 2000000);
+            //araclar.Add("34 BB 444", "Mercedes");
+            //araclar.Add(5000, 150.3);
+
+
+
+            //// Generic Kolleksiyonlar : İstenilen tipe göre çalışacak şekilde yaratılan listeledir. Tip güvenlidirler. ArrayList yerine List/IList/IEnumerable, SortedList yerine Dictionary generikleri kullanılarak tip güvenli listeler oluşturulabilir.
+
+            //List<int> vizeNotlari = new List<int>();
+
+            //try
+            //{
+            //    int deger = 0;
+            //    bool donusumSonucu = false;
+
+            //    donusumSonucu = int.TryParse("ali", out deger);
+
+            //    if (donusumSonucu)
+            //    {
+            //        vizeNotlari.Add(deger);
+            //    }
+            //    //vizeNotlari.Add(Convert.ToInt32("ali")); // bu kod hata üretir.
+            //}
+            //catch (Exception ex)
+            //{
+            //    Console.WriteLine(ex.Message);
+            //    // vizeNotlari.Add(0);
+            //}
+
+            //vizeNotlari.Add(78);
+            //vizeNotlari.Add(15);
+
+
+            //double ortalama=0, toplam=0;
+
+            //foreach (int item in vizeNotlari)
+            //{ 
+            //    toplam += item;
+            //}
+
+            //ortalama = toplam/vizeNotlari.Count;
+
+            //Console.WriteLine($"Not ortalaması={ortalama}");
+
+            //Console.WriteLine("---------- Dictionary ---------------");
+
+            //Dictionary<int, string> liste2 = new Dictionary<int, string>();
+
+            //liste2.Add(1, "Ali");
+            //liste2.Add(2, "125");
+
+            #endregion
+
+            #region Sözlük
+            Dictionary<string, string> enTrSozluk = new Dictionary<string, string>();
+
+            enTrSozluk.Add("Apple", "Elma");
+            enTrSozluk.Add("Cup", "Kupa");
+            enTrSozluk.Add("Mouse", "Fare");
+            enTrSozluk.Add("Watch", "Saat");
+            enTrSozluk.Add("Pen", "Kalem");
+            enTrSozluk.Add("Class", "Sınıf");
+            enTrSozluk.Add("Dictionary", "Sözlük");
+
+        tekrar:
+            Console.Write("Anlamını görmek istediğiniz İngilizce kelimeyi girin:");
+
+            string kelime = Console.ReadLine().ToLower();
+
+            if (kelime == string.Empty)
             {
-
+                goto bitir;
             }
 
-            //e.struct (Yapı) : Özel tip tanımlamk için kullanılır.
+            char[] karakterler = kelime.ToCharArray();
+            karakterler[0] = char.ToUpper(karakterler[0]);
 
-            Urun urun1 = new Urun();
+            string yeniKelime = "";
 
-            urun1.UrunKod = 1;
-            urun1.UrunAd = "Bisküvi";
-            urun1.Fiyat = 55.75;
-
-            //f. DateTime  tipi: Tarih tipinde verier tutmak için kullanılır.
-
-            DateTime tarih = Convert.ToDateTime("2026-06-01");
-            DateTime satisTarihi = DateTime.MinValue;
-            DateTime kayitTarihi = new DateTime(2026, 3, 19);
-
-
-            //g. char
-
-            char karakter = 'A';
-            char k2 = '6';
-            char k3 = (char)169;
-
-
-            Console.WriteLine(k3 + " ---------------------------------");
-
-            int vize = 0, final = 0;
-            double sonuc = 0;
-
-            Console.Write("Vize Notunu Giriniz:");
-            vize = Convert.ToInt32(Console.ReadLine());
-
-            Console.Write("Final Notunu Giriniz:");
-            final = Convert.ToInt32(Console.ReadLine());
-
-            sonuc = vize * 0.4 + final * 0.6;
-
-            if (sonuc < 70)
-                Console.WriteLine("KÖTÜ");
-            else
-                Console.WriteLine("İYİ");
-
-            Console.WriteLine("-----------------------------------------");
-
-            Urun ceket = new Urun();
-
-            ceket.UrunKod = 128;
-            ceket.UrunAd = "kanvas kareli ceket siyah";
-            ceket.Fiyat = 11250.5;
-            //  ceket.UrunRengi = Renkler.Siyah;
-            ceket.UrunRengi = (Renkler)6;
-
-            Console.WriteLine(ceket.UrunAd + " - " + ceket.Fiyat + " - " + ceket.UrunRengi);
-
-            Console.WriteLine("{0} - {1} - {2}", ceket.UrunAd, ceket.Fiyat, ceket.UrunRengi);
-
-            Console.WriteLine($"{ceket.UrunAd} - {ceket.Fiyat} - {ceket.UrunRengi}");
-
-
-            Console.WriteLine("-------------------------------------------------------------------");
-
-
-            // 2. Referans Tipli Değişkenler : İçlerinde veri yerine, verinin bellekteki yerinin adresini tutan değişkenlerdir. Değişkenin kendisi belleğin "stack" kısmındadır. İşaret ettiği veri ise belleğin "heap" bölgesindedir. String, array, kolleksiyonlar, class, delegate, interface
-
-            string adSoyad = "Ali Ak";
-            string adres = "Bakçelievler";
-            string secim = "A";
-
-
-            //Array : dizi - içerisinde aynı tipte 1 den fazla veri taşıyabilen yapılardır. Tip güvenlidir. İlk değer dizi tanımlanırken verilebilir, ya da sonradan dizinin eleman numarası (index numarası) belirtilerek te değer atanabilir. index sırası 0'dan başlar ve en büyük index numarası, dizinin eleman sayısının 1 eksiği kadar olabilir. index numarası eksi değer alamaz, eleman sayısına eşit ya da büyük olamaz. Dizi elemanları sıralanabilir, sıralama terse çevrilebilir, tüm liste temizlenebilir, dizi elemanları içerisinde arama yapılabilir. 
-
-            int[] sayilar = { 5, 25, 5000, 3, 3000000, 18 };
-
-            string[] iller = new string[82];
-
-            iller[5] = "Adıyaman";
-
-            iller[34] = "istanbul";
-            iller[0] = "Boş";
-
-            iller[81] = "Düzce";
-
-
-            int[] numbers = sayilar;
-
-            numbers[0] = 50;
-
-            Console.WriteLine(sayilar[0]);
-
-            double[] fiyatlar = new double[50];
-
-            fiyatlar[0] = 150.75;
-
-            Array.Sort(sayilar);
-            Console.WriteLine(sayilar[0]);
-            Array.Reverse(sayilar);
-            Console.WriteLine(sayilar[0]);
-
-            Console.WriteLine(iller.Count());
-
-            Array.Clear(sayilar, 0, sayilar.Length);
-
-            Array.Resize(ref iller, 92);
-
-            bool varMi = iller.Contains("Ankara");
-
-            if (!varMi)
+            foreach (char item in karakterler)
             {
-                iller[6] = "Ankara";
+                yeniKelime += item;
             }
 
-            if (!iller.Contains("Adana"))
+            kelime = yeniKelime;
+
+            bool sonuc = enTrSozluk.ContainsKey(kelime);
+
+            if (sonuc)
             {
-                iller[1] = "Adana";
+                Console.WriteLine($"{kelime} kelimesinin Türkçe karşılığı = {enTrSozluk[kelime]}");
             }
-
-            Console.WriteLine(sayilar.ElementAt(5));
-            Console.WriteLine(sayilar[5]);
-
-            // Kolleksiyon : İçerisinde birden fazla değer taşıyabilen nesnelerdir. ArrayList, SortedList, HashTable
-
-            ArrayList liste1 = new ArrayList();
-
-            liste1.Add(12321);
-            liste1.Add("Antalya");
-            liste1.Add(155.50);
-            liste1.Add(true);
-            liste1.Add(ceket);
-
-            liste1[1] = "Manavgat";
-
-            Console.WriteLine(liste1[0]);
-
-            liste1.Remove(155.50);
-            liste1.RemoveAt(0);
-            //  liste1.Sort();
-            //  Console.WriteLine(liste1.Count);
-
-            bool sonuc2 = liste1.Contains("Antalya");
-
-            SortedList ogrenciler = new SortedList();
-
-            ogrenciler.Add(10, "Kemal");
-            ogrenciler.Add(5, "Cemal");
-            ogrenciler.Add(75, "Deniz");
-            ogrenciler.Add(30, "Murat");
-
-            Console.WriteLine(ogrenciler[10]);
-
-            Console.WriteLine("-------- foreach - ogrenciler.Keys -----------------");
-
-            foreach (var item in ogrenciler.Keys)
+            else 
             {
-                Console.WriteLine(ogrenciler[item]);
+                Console.WriteLine("Aradığınız İngilizce kelime sözlükte mevcut değil.");
             }
 
-            Console.WriteLine("---------- foreach - liste1 --------------------");
+            Console.ReadKey();
+            Console.Clear();
 
-            foreach (var deger in liste1)
-            {
-                if (deger.GetType() == typeof(Urun)) // reflection 
-                {
-                    Urun u = (Urun)deger;
-                    Console.WriteLine(u.UrunAd);
-                }
-                else
-                {
-                    Console.WriteLine(deger);
-                }
-            }
+            goto tekrar;
 
-            // Generic Kolleksiyonlar : İstenilen tipe göre çalışacak şekilde yaratılan listeledir. Tip güvenlidirler. ArrayList yerine List/IList/IEnumerable, SortedList yerine Dictionary generikleri kullanılarak tip güvenli listeler oluşturulabilir.
+        bitir:
 
-            List<int> vizeNotlari = new List<int>();
-
-            try
-            {
-                int deger = 0;
-                bool donusumSonucu = false;
-
-                donusumSonucu = int.TryParse("ali", out deger);
-
-                if (donusumSonucu)
-                {
-                    vizeNotlari.Add(deger);
-                }
-                //vizeNotlari.Add(Convert.ToInt32("ali")); // bu kod hata üretir.
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-                // vizeNotlari.Add(0);
-            }
-
-            vizeNotlari.Add(78);
-            vizeNotlari.Add(15);
-
-
-            double ortalama=0, toplam=0;
-
-            foreach (int item in vizeNotlari)
-            { 
-                toplam += item;
-            }
-
-            ortalama = toplam/vizeNotlari.Count;
-
-            Console.WriteLine($"Not ortalaması={ortalama}");
-
+            #endregion
 
             Console.ReadKey();
 

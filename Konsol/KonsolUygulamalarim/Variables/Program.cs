@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Variables
@@ -296,6 +297,11 @@ namespace Variables
             //araclar.Add(5000, 150.3);
 
 
+            //foreach (var item in araclar.Keys)
+            //{
+            //    Console.WriteLine(araclar[item]);
+            //}
+
 
             //// Generic Kolleksiyonlar : İstenilen tipe göre çalışacak şekilde yaratılan listeledir. Tip güvenlidirler. ArrayList yerine List/IList/IEnumerable, SortedList yerine Dictionary generikleri kullanılarak tip güvenli listeler oluşturulabilir.
 
@@ -345,55 +351,91 @@ namespace Variables
             #endregion
 
             #region Sözlük
-            Dictionary<string, string> enTrSozluk = new Dictionary<string, string>();
+            //    Dictionary<string, string> enTrSozluk = new Dictionary<string, string>();
 
-            enTrSozluk.Add("Apple", "Elma");
-            enTrSozluk.Add("Cup", "Kupa");
-            enTrSozluk.Add("Mouse", "Fare");
-            enTrSozluk.Add("Watch", "Saat");
-            enTrSozluk.Add("Pen", "Kalem");
-            enTrSozluk.Add("Class", "Sınıf");
-            enTrSozluk.Add("Dictionary", "Sözlük");
+            //    enTrSozluk.Add("Apple", "Elma");
+            //    enTrSozluk.Add("Cup", "Kupa");
+            //    enTrSozluk.Add("Mouse", "Fare");
+            //    enTrSozluk.Add("Watch", "Saat");
+            //    enTrSozluk.Add("Pen", "Kalem");
+            //    enTrSozluk.Add("Class", "Sınıf");
+            //    enTrSozluk.Add("Dictionary", "Sözlük");
 
-        tekrar:
-            Console.Write("Anlamını görmek istediğiniz İngilizce kelimeyi girin:");
+            //tekrar:
+            //    Console.Write("Anlamını görmek istediğiniz İngilizce kelimeyi girin:");
 
-            string kelime = Console.ReadLine().ToLower();
+            //    string kelime = Console.ReadLine().ToLower();
 
-            if (kelime == string.Empty)
-            {
-                goto bitir;
+            //    if (kelime == string.Empty)
+            //    {
+            //        goto bitir;
+            //    }
+
+            //    char[] karakterler = kelime.ToCharArray();
+            //    karakterler[0] = char.ToUpper(karakterler[0]);
+
+            //    string yeniKelime = "";
+
+            //    foreach (char item in karakterler)
+            //    {
+            //        yeniKelime += item;
+            //    }
+
+            //    kelime = yeniKelime;
+
+            //    bool sonuc = enTrSozluk.ContainsKey(kelime);
+
+            //    if (sonuc)
+            //    {
+            //        Console.WriteLine($"{kelime} kelimesinin Türkçe karşılığı = {enTrSozluk[kelime]}");
+            //    }
+            //    else 
+            //    {
+            //        Console.WriteLine("Aradığınız İngilizce kelime sözlükte mevcut değil.");
+            //    }
+
+            //    Console.ReadKey();
+            //    Console.Clear();
+
+            //    goto tekrar;
+
+            // bitir:
+
+            #endregion
+
+            #region List<T>
+            // List<T> : List Jenerik Kolleksiyonu tip güvenlidir ve içerisine sadece belirtilen tipte değerler kabul eder. Bir Veritabanından okunan veriler genellikle aynı tipte olduğundan VT'dan gelen bilgileri program tarafında hafızaya almak için List koleksiyonu kullanılır. Ek olarak List'in türediği IList ve IEnumerable ile de Liste yapılabilir.
+
+            List<string> OgrenciListesi = new List<string>();
+
+            OgrenciListesi.Add("Ali");
+            OgrenciListesi.Add("Kamil");
+            OgrenciListesi.Add("Ayşe");
+
+            OgrenciListesi.Sort();
+            OgrenciListesi.Remove("Kamil");
+
+            if (!OgrenciListesi.Contains("Cemal"))
+                  OgrenciListesi.Add("Cemal");
+
+            int ogrSayisi = OgrenciListesi.Count;
+
+            foreach (string item in OgrenciListesi)
+            { 
+                Console.WriteLine(item); 
             }
 
-            char[] karakterler = kelime.ToCharArray();
-            karakterler[0] = char.ToUpper(karakterler[0]);
+            List<Ogrenci> OgrenciListesi2 = new List<Ogrenci>();
 
-            string yeniKelime = "";
+            Ogrenci ali = new Ogrenci();
+            ali.OgrenciKod = 25;
+            ali.OgrenciKayitTarihi = Convert.ToDateTime("2026-06-19");
+            ali.OgrenciAd = "Ali Kılıç";
 
-            foreach (char item in karakterler)
-            {
-                yeniKelime += item;
-            }
+            OgrenciListesi2.Add(ali);
+            OgrenciListesi2.Add(new Ogrenci() {OgrenciAd="Ayşe",OgrenciKod=26,OgrenciSinifi=3});
 
-            kelime = yeniKelime;
-
-            bool sonuc = enTrSozluk.ContainsKey(kelime);
-
-            if (sonuc)
-            {
-                Console.WriteLine($"{kelime} kelimesinin Türkçe karşılığı = {enTrSozluk[kelime]}");
-            }
-            else 
-            {
-                Console.WriteLine("Aradığınız İngilizce kelime sözlükte mevcut değil.");
-            }
-
-            Console.ReadKey();
-            Console.Clear();
-
-            goto tekrar;
-
-        bitir:
+            // Ogrenci[] oList = new Ogrenci[15];
 
             #endregion
 

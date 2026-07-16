@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SayilariTopla", "SayilariTo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Variables", "Variables\Variables.csproj", "{7EA3493A-E5EB-4770-B4A6-FCC44DF2E855}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Class_Sinif", "Class_Sinif\Class_Sinif.csproj", "{4D37DC0D-5C8D-49E9-92F0-7C7BD796AB98}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{7EA3493A-E5EB-4770-B4A6-FCC44DF2E855}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7EA3493A-E5EB-4770-B4A6-FCC44DF2E855}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7EA3493A-E5EB-4770-B4A6-FCC44DF2E855}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D37DC0D-5C8D-49E9-92F0-7C7BD796AB98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D37DC0D-5C8D-49E9-92F0-7C7BD796AB98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D37DC0D-5C8D-49E9-92F0-7C7BD796AB98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D37DC0D-5C8D-49E9-92F0-7C7BD796AB98}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

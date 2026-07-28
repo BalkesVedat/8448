@@ -21,7 +21,7 @@ namespace Class_Sinif
         public string GetCustomerStatus() {
             //işlem kodları
 
-            if (musteriID == 0)
+            if (durum == 0)
                 return "Pasif";
             else
                 return "Aktif";

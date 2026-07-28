@@ -12,10 +12,6 @@ namespace Class_Sinif
         Erkek
     }
 
-
-
-
-
     internal class Program
     {
 
@@ -41,7 +37,26 @@ namespace Class_Sinif
             Console.WriteLine(m.GetKayitTarihi());
 
 
-          
+          Tasit otomobil = new Tasit();
+
+            otomobil._plaka = "34 ABC 34";
+            otomobil._marka = "Mercedes";
+            otomobil._model = "CLK 500";
+            otomobil._silindirSayisi = 12;
+            otomobil._yakitTipi = YakitTipi.Benzin;
+            otomobil._yakitHacmi = 500;
+            otomobil._motorSaseNo = "12321X21321W2342";
+
+
+            Console.WriteLine(otomobil._silindirSayisi);
+
+            Console.WriteLine(otomobil._yakitTipi);
+            Console.WriteLine(otomobil._yakitHacmi);
+            Console.WriteLine(otomobil._motorSaseNo);
+
+            otomobil._motorSaseNo = "E555555K4545555C";
+
+            Console.WriteLine(otomobil._motorSaseNo);
 
 
         }

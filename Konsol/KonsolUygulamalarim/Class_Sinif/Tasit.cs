@@ -19,6 +19,22 @@ namespace Class_Sinif
 
     internal class Tasit
     {
+        //default constructor (yapıcı) metod. 
+
+        //ctor metodlar, nesnenin örneği alındığı anda otomatik yapılması gereken işlerin kodlanması için kullanılır.
+        public Tasit()
+        {
+            Console.WriteLine("Tasıt üretildi.");
+            silindirSayisi = 2;
+        }
+
+        public Tasit(string Plaka)
+        {
+            plaka = Plaka;
+        }
+
+
+
         //Full property tanımı ile Encapsulation
         private string plaka;
         public string _plaka

@@ -7,7 +7,21 @@ using System.Threading.Tasks;
 namespace Class_Sinif
 {
     internal class Musteri
-    {   
+    {
+        public Musteri()
+        {
+            
+        }
+
+        public Musteri(string _musteriAdSoyad, string _firmaAdi, string _adresi, string _eMail)
+        {
+            musteriAdSoyad = _musteriAdSoyad;
+            firmaAdi = _firmaAdi;
+            adresi = _adresi;
+            eMail = _eMail;
+        }
+
+
         //fields : Alanlar
         public int musteriID;
         public string musteriAdSoyad,firmaAdi,adresi,eMail;

@@ -57,6 +57,55 @@ namespace Donguler
             urunler.Add("patates", 271300);
             urunler.Add("patlıcan", 19750);
 
+            double toplamTutar = 0;
+
+           // List<double> fiyatlar = urunler.Values.ToList();
+
+            for (int i = 0; i < urunler.Count; i++)
+            {
+                //toplamTutar += fiyatlar[i];
+                toplamTutar += urunler.ElementAt(i).Value;
+            }
+
+            Console.WriteLine($"Toplam işlem:{urunler.Count} Toplam tutar:{toplamTutar}");
+
+            //-----------------------------------------------
+
+            for (int i = 10; i > 0; i--)
+            {
+                Console.WriteLine(i);
+            }
+
+            //-----------------------------------------------
+            //foreach : Bir kolleksiyondaki her bir değer için ayrı ayrı işlem yapılması gerektiğinde kullanılır. Her bir eleman için ayry ayrı döner ve değeri "item" değişkenine atar. kolleksiyondan gelen değerin tipi "item" ın tipi olarak atanabilir ya da "var" tipi olarak ta kullanılabilir. "var" tipi tüm tipleri kapsar. 
+
+            foreach (string item in iller)
+            {
+                Console.WriteLine(item);
+            }
+
+            Console.WriteLine("-----------------------");
+
+            double degerToplami = 0;
+
+            foreach (var item in urunler.Values)
+            {
+                degerToplami += item;
+            }
+
+            Console.WriteLine($"Toplam işlem:{urunler.Count} Toplam tutar:{degerToplami}");
+
+            foreach (var item in urunler.Keys)
+            {
+                Console.WriteLine(item);
+            }
+
+            Console.WriteLine("-----------------------");
+
+            foreach (string item in iller)
+            {
+                Console.WriteLine(item);
+            }
 
 
 

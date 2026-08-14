@@ -8,8 +8,8 @@ namespace Donguler
 {
     public enum Kategori
     { 
-        Gıda,
-        Elektronik,
+        Gıda,         
+        Elektronik,                       
         Diğer
     }
 
@@ -242,7 +242,7 @@ namespace Donguler
 
             string devam = "";
 
-            List<Urun> urunListesi = new List<Urun>();
+            List<Urun> urunListesi = new List<Urun>();         
 
             do
             {
@@ -283,7 +283,6 @@ namespace Donguler
                 devam = Console.ReadLine().ToUpper();
 
             } while (devam=="E");
-
 
             double toplamUrunTutar = 0;
             double toplamAdet = 0;

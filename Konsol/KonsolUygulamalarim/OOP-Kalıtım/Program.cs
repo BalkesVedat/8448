@@ -29,6 +29,7 @@ namespace OOP_Kalıtım
             u.YolcuSayisi = 250;
             u.Model = "777-300ER";
             u.UretimYili = 2024;
+            u.MaximumHiz = 375;
 
             u.BilgiVer();
             Console.WriteLine(u.UcabilirMi);

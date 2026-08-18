@@ -15,6 +15,5 @@ namespace OOP_Kalıtım
 
         public int YolcuSayisi { get; set; }
         public int YukKapasitesi { get; set; }
-
     }
 }

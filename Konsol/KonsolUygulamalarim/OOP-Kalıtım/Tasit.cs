@@ -17,10 +17,25 @@ namespace OOP_Kalıtım
         public bool UcabilirMi { get; set; }
         public bool YuzebilirMi { get; set; }
 
+        private int maximumHiz;
+
+        public int MaximumHiz
+        {
+            get { return maximumHiz; }
+
+            set {
+                if (value < 0)
+                    maximumHiz = 0;
+                else
+                    maximumHiz = value;
+            }
+        }
+
+
 
         public void BilgiVer()
         {
-            Console.WriteLine($"Marka:\"{Marka}\" \r\nModel:\"{Model}\" \r\nÜretim Yılı:\"{UretimYili}\" \r\n");
+            Console.WriteLine($"Marka:\"{Marka}\" \r\nModel:\"{Model}\" \r\nÜretim Yılı:\"{UretimYili}\" \r\nMaximum Hız:\"{MaximumHiz}\"");
         }
     }
 }

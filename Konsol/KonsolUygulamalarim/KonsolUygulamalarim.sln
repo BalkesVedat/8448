@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP-Kapsulleme", "OOP-Kapsu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP-CokBicimlilik1", "OOP-CokBicimlilik1\OOP-CokBicimlilik1.csproj", "{19CC8AE9-9372-4CE0-A4C9-CF821BE3EF18}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interface", "Interface\Interface.csproj", "{8522C162-ED09-4D20-A322-598F22990F46}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{19CC8AE9-9372-4CE0-A4C9-CF821BE3EF18}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19CC8AE9-9372-4CE0-A4C9-CF821BE3EF18}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19CC8AE9-9372-4CE0-A4C9-CF821BE3EF18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8522C162-ED09-4D20-A322-598F22990F46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8522C162-ED09-4D20-A322-598F22990F46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8522C162-ED09-4D20-A322-598F22990F46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8522C162-ED09-4D20-A322-598F22990F46}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

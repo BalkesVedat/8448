@@ -22,6 +22,8 @@ namespace OOP_CokBicimlilik1
 
             Zurafa z = new Zurafa();
 
+            ((Kus)kugu).YumurtaRengi = 125;
+
             kugu.SesCikar();
             ordek.SesCikar();
             i.SesCikar();

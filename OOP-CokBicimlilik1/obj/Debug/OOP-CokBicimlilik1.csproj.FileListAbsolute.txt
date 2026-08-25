@@ -1,0 +1,8 @@
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\Konsol\KonsolUygulamalarim\OOP-CokBicimlilik1\bin\Debug\OOP-CokBicimlilik1.exe.config
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\Konsol\KonsolUygulamalarim\OOP-CokBicimlilik1\bin\Debug\OOP-CokBicimlilik1.exe
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\Konsol\KonsolUygulamalarim\OOP-CokBicimlilik1\bin\Debug\OOP-CokBicimlilik1.pdb
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\Konsol\KonsolUygulamalarim\OOP-CokBicimlilik1\obj\Debug\OOP-CokBicimlilik1.csproj.AssemblyReference.cache
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\Konsol\KonsolUygulamalarim\OOP-CokBicimlilik1\obj\Debug\OOP-CokBicimlilik1.csproj.CoreCompileInputs.cache
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\Konsol\KonsolUygulamalarim\OOP-CokBicimlilik1\obj\Debug\OOP-CokBicimlilik1.exe
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\Konsol\KonsolUygulamalarim\OOP-CokBicimlilik1\obj\Debug\OOP-CokBicimlilik1.pdb
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\Konsol\KonsolUygulamalarim\OOP-CokBicimlilik1\obj\Debug\OOP-CokBicimlilik1.exe.config

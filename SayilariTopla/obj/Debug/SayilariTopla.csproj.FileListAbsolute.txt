@@ -1,0 +1,8 @@
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\Konsol\KonsolUygulamalarim\SayilariTopla\bin\Debug\SayilariTopla.exe.config
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\Konsol\KonsolUygulamalarim\SayilariTopla\bin\Debug\SayilariTopla.exe
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\Konsol\KonsolUygulamalarim\SayilariTopla\bin\Debug\SayilariTopla.pdb
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\Konsol\KonsolUygulamalarim\SayilariTopla\obj\Debug\SayilariTopla.csproj.AssemblyReference.cache
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\Konsol\KonsolUygulamalarim\SayilariTopla\obj\Debug\SayilariTopla.csproj.CoreCompileInputs.cache
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\Konsol\KonsolUygulamalarim\SayilariTopla\obj\Debug\SayilariTopla.exe
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\Konsol\KonsolUygulamalarim\SayilariTopla\obj\Debug\SayilariTopla.pdb
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\Konsol\KonsolUygulamalarim\SayilariTopla\obj\Debug\SayilariTopla.exe.config

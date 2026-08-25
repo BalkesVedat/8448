@@ -1,0 +1,7 @@
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\Konsol\KonsolUygulamalarim\OOP-Kapsulleme\bin\Debug\OOP-Kapsulleme.exe.config
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\Konsol\KonsolUygulamalarim\OOP-Kapsulleme\bin\Debug\OOP-Kapsulleme.exe
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\Konsol\KonsolUygulamalarim\OOP-Kapsulleme\bin\Debug\OOP-Kapsulleme.pdb
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\Konsol\KonsolUygulamalarim\OOP-Kapsulleme\obj\Debug\OOP-Kapsulleme.csproj.AssemblyReference.cache
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\Konsol\KonsolUygulamalarim\OOP-Kapsulleme\obj\Debug\OOP-Kapsulleme.csproj.CoreCompileInputs.cache
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\Konsol\KonsolUygulamalarim\OOP-Kapsulleme\obj\Debug\OOP-Kapsulleme.exe
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\Konsol\KonsolUygulamalarim\OOP-Kapsulleme\obj\Debug\OOP-Kapsulleme.pdb

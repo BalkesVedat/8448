@@ -1,0 +1,8 @@
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\Konsol\KonsolUygulamalarim\OOP-Kalıtım\bin\Debug\OOP-Kalıtım.exe.config
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\Konsol\KonsolUygulamalarim\OOP-Kalıtım\bin\Debug\OOP-Kalıtım.exe
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\Konsol\KonsolUygulamalarim\OOP-Kalıtım\bin\Debug\OOP-Kalıtım.pdb
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\Konsol\KonsolUygulamalarim\OOP-Kalıtım\obj\Debug\OOP-Kalıtım.csproj.AssemblyReference.cache
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\Konsol\KonsolUygulamalarim\OOP-Kalıtım\obj\Debug\OOP-Kalıtım.csproj.CoreCompileInputs.cache
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\Konsol\KonsolUygulamalarim\OOP-Kalıtım\obj\Debug\OOP-Kalıtım.exe
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\Konsol\KonsolUygulamalarim\OOP-Kalıtım\obj\Debug\OOP-Kalıtım.pdb
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\Konsol\KonsolUygulamalarim\OOP-Kalıtım\obj\Debug\OOP-Kalıtım.exe.config

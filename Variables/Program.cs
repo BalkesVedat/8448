@@ -439,6 +439,12 @@ namespace Variables
 
             #endregion
 
+            #region Delege (Delegate)
+            //Delegeler (Temsilci) içerisinde metod tutan yapılardır. Birden fazla metodu bir delegeye ekleyebiliriz. Delege çağırıldığında içerisinde bulunan metodları sıradan çağırarak çalıştırır. Windows Desktop uygulamalarındaki Event (Olay) ve EventHandler (Olay İşleyicisi) yapıları delege altyapısıyla oluşturulmuştur. Örneğin bir düğmeye tıklandığında "Click" olayı meydana gelir ve bu olayı yöneten olay işleyicisi (delete) devreye girerek kendisine atanmış metodu çağırır. 
+
+
+            #endregion
+
             Console.ReadKey();
 
         }

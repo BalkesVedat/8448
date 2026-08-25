@@ -9,7 +9,7 @@ namespace OOP_CokBicimlilik1
     public class Kus : Canli
     {
         public int YumurtaRengi { get; set; }
-        public void SesCikar()
+        public override void SesCikar()
         {
             Console.WriteLine("Cik Cik");
         }

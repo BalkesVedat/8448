@@ -1,0 +1,19 @@
+ATM  Uygulama Planı:
+
+objeler:
+	-Musteri.cs
+		HesapNo - int
+		Password - int
+		AdSoyad - string
+		Email - string
+		HesapBakiyesi - double
+	-List<Musteri> MusteriListesi - DB Simulasyonu
+	
+İşlemler:
+	-Giriş Yapma (Otomatik çalışacak)
+	-Menü işlemleri:
+	-Bakiye Görüntüleme: Ad Soyad ve Hesap Bakiyesi gör.
+	-Para Ekleme : Miktar sorulacak ve hesaba eklenecek.
+	-Para Çekme : Miktar sor, bakiye kontrolü?, yeterli ise para ver, değilse mesaj ver.
+	-Havale/EFT : karşı taraf hesap no gir,müşteri var mı? kontrol,miktar iste,hesap bakiyesi kontrolü,  karşı hesaba ekle, bu müşteriden düş. 
+	-Çıkış : Çıkmak istiyor musunuz? "E" ise çık.

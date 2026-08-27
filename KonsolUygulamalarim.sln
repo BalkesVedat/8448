@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP-Soyutlama", "OOP-Soyutl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metotlar", "Metotlar\Metotlar.csproj", "{FADFBDD1-663A-489B-A9BB-E8BA9D7F3131}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ATM", "ATM\ATM.csproj", "{8A06D9FA-3D67-404A-A07F-18B1235F7779}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{FADFBDD1-663A-489B-A9BB-E8BA9D7F3131}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FADFBDD1-663A-489B-A9BB-E8BA9D7F3131}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FADFBDD1-663A-489B-A9BB-E8BA9D7F3131}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A06D9FA-3D67-404A-A07F-18B1235F7779}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A06D9FA-3D67-404A-A07F-18B1235F7779}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A06D9FA-3D67-404A-A07F-18B1235F7779}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A06D9FA-3D67-404A-A07F-18B1235F7779}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

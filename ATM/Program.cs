@@ -8,12 +8,13 @@ using System.Threading.Tasks;
 
 namespace ATM
 {
+
     internal class Program
     {
+       static List<Customer> CustomerList = new List<Customer>();
+
         static void Main(string[] args)
         {
-            List<Customer> CustomerList = new List<Customer>();
-
             Customer c1 = new Customer();
             c1.AccountNumber = 1;
             c1.Password = 1234;
@@ -68,17 +69,9 @@ namespace ATM
 
             // Customer customer = CustomerList.Where(a => a.AccountNumber == hesapNo).FirstOrDefault();
 
-            Customer customer = new Customer();
+            Customer customer = MusteriGetir(hesapNo);
 
-            foreach (Customer item in CustomerList)
-            {
-                if (item.AccountNumber == hesapNo && item.Password == password)
-                {
-                    customer = item;
-                }
-            }
-
-            if (customer.AccountNumber == 0)
+            if (customer.AccountNumber == 0 || password != customer.Password)
             {
                 Console.WriteLine("Girdiğiniz Bilgiler hatalı, kontrol ederek tekrar giriniz.");
                 goto reEnter;
@@ -120,15 +113,21 @@ namespace ATM
                 {
                     case 1:
                         BakiyeGoster(customer);
+                        Console.ReadKey();
                         break;
                     case 2:
                         customer.Balance = ParaYatir(customer);
+                        BakiyeGoster(customer);
+                        Console.ReadKey();
                         break;
                     case 3:
-                        customer.Balance = ParaCek(customer);
+                        customer.Balance = ParaCek(customer,0);
+                        BakiyeGoster(customer);
+                        Console.ReadKey();
                         break;
                     case 4:
-                        //Havale();
+                        Havale(customer);
+                        Console.ReadKey();
                         break;
                     case 5:
                         //Cikis();
@@ -147,6 +146,66 @@ namespace ATM
 
         }
 
+        private static Customer MusteriGetir(int hesapNo)
+        {
+            Customer customer = new Customer();
+
+            foreach (Customer item in CustomerList)
+            {
+                if (item.AccountNumber == hesapNo)
+                {
+                    customer = item;
+                }
+            }
+            return customer;
+        }
+
+
+
+        private static void Havale(Customer customer)
+        {        
+            Console.Write("Havale yapılacak HesapNo gir :");
+
+            int karsiHesapNo = 0;
+
+            try
+            {
+                karsiHesapNo = int.Parse(Console.ReadLine());
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Girilen Hesapno hatalı");
+                Havale(customer);
+            }
+
+            //müşteri kontrol
+
+            Customer karsiMusteri = MusteriGetir(karsiHesapNo);
+
+            if (karsiMusteri.AccountNumber==0)
+            {
+                Console.WriteLine("Girdiğiniz HesapNo geçerli değil. Lütfen tekrar deneyiniz.");
+                Havale(customer);
+            }
+
+            tekrar:
+            Console.Write("Tutarı Giriniz:");
+            double tutar = 0;
+            try
+            {
+                tutar = double.Parse(Console.ReadLine());
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Geçersiz tutar. ");
+                 goto tekrar;
+            }
+
+            customer.Balance = ParaCek(customer,tutar);
+            ParaYatir(karsiMusteri,tutar);
+            BakiyeGoster(customer);
+        }
+
         private static void BakiyeGoster(Customer customer)
         {
             Console.WriteLine($"Hesap Bakiyeniz : {customer.Balance} 'dir.");
@@ -155,7 +214,7 @@ namespace ATM
         private static double ParaYatir(Customer customer) 
         {
         //tekrar:
-            Console.Write("Yatırmak istediğiniz Tutarı Giriniz:");
+            Console.Write("Tutarı Giriniz:");
             double tutar = 0;
             try
             {
@@ -169,14 +228,18 @@ namespace ATM
             }
 
             return customer.Balance + tutar;
-
         }
 
-        private static double ParaCek(Customer customer)
+        private static double ParaYatir(Customer customer, double tutar)
         {
-            tekrar:
-            Console.Write("Çekmek istediğiniz Tutarı Giriniz:");
-            double tutar = 0;
+            if (tutar > 0) 
+            {
+                return customer.Balance + tutar;
+            }
+
+            //tekrar:
+            Console.Write("Tutarı Giriniz:");
+            
             try
             {
                 tutar = double.Parse(Console.ReadLine());
@@ -185,12 +248,39 @@ namespace ATM
             {
                 Console.WriteLine("\r\n");
                 // goto tekrar;
-                ParaCek(customer);
+                ParaYatir(customer);
+            }
+
+            return customer.Balance + tutar;
+        }
+
+        private static double ParaCek(Customer customer, double tutar)
+        {
+            if (tutar > 0 && tutar <= customer.Balance)
+            {
+                return customer.Balance - tutar;
+            }
+            else
+            {
+               // Console.WriteLine("Girilen Tutar hatalı yada bakiye yetersiz"); 
+            }
+
+            tekrar:
+            Console.Write("Tutarı Giriniz:");
+            try
+            {
+                tutar = double.Parse(Console.ReadLine());
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Girilen Tutar hatalı");
+                // goto tekrar;
+                ParaCek(customer,0);
             }
 
             if (tutar <= customer.Balance)
             {
-                Console.WriteLine($"{tutar} TL hesabınızdan çaktiniz.");
+                Console.WriteLine($"{tutar} TL hesabınızdan düşüldü.");
                 return customer.Balance - tutar;
             }
             else 

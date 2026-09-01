@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37203.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld", "HelloWorld\HelloWorld.csproj", "{067567FA-403D-4D35-9FD5-B6D36A021181}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hesapla", "hesapla\hesapla.csproj", "{90A3F829-C2B3-4735-9BDD-1C3911D5A57B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{067567FA-403D-4D35-9FD5-B6D36A021181}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{067567FA-403D-4D35-9FD5-B6D36A021181}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{067567FA-403D-4D35-9FD5-B6D36A021181}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{067567FA-403D-4D35-9FD5-B6D36A021181}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90A3F829-C2B3-4735-9BDD-1C3911D5A57B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90A3F829-C2B3-4735-9BDD-1C3911D5A57B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90A3F829-C2B3-4735-9BDD-1C3911D5A57B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90A3F829-C2B3-4735-9BDD-1C3911D5A57B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0C79D646-3582-41D0-BC12-56D3914744FD}
+	EndGlobalSection
+EndGlobal

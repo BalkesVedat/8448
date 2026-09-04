@@ -1,0 +1,11 @@
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\Desktop\WindowsDesktop\hesapla\bin\Debug\hesapla.exe.config
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\Desktop\WindowsDesktop\hesapla\bin\Debug\hesapla.exe
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\Desktop\WindowsDesktop\hesapla\bin\Debug\hesapla.pdb
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\Desktop\WindowsDesktop\hesapla\obj\Debug\hesapla.csproj.AssemblyReference.cache
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\Desktop\WindowsDesktop\hesapla\obj\Debug\hesapla.Form1.resources
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\Desktop\WindowsDesktop\hesapla\obj\Debug\hesapla.Properties.Resources.resources
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\Desktop\WindowsDesktop\hesapla\obj\Debug\hesapla.csproj.GenerateResource.cache
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\Desktop\WindowsDesktop\hesapla\obj\Debug\hesapla.csproj.CoreCompileInputs.cache
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\Desktop\WindowsDesktop\hesapla\obj\Debug\hesapla.exe
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\Desktop\WindowsDesktop\hesapla\obj\Debug\hesapla.pdb
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\Desktop\WindowsDesktop\hesapla\obj\Debug\hesapla.exe.config

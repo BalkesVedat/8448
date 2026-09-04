@@ -1,0 +1,11 @@
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\Desktop\WindowsDesktop\KayitFormu\bin\Debug\KayitFormu.exe.config
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\Desktop\WindowsDesktop\KayitFormu\bin\Debug\KayitFormu.exe
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\Desktop\WindowsDesktop\KayitFormu\bin\Debug\KayitFormu.pdb
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\Desktop\WindowsDesktop\KayitFormu\obj\Debug\KayitFormu.csproj.AssemblyReference.cache
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\Desktop\WindowsDesktop\KayitFormu\obj\Debug\KayitFormu.Form1.resources
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\Desktop\WindowsDesktop\KayitFormu\obj\Debug\KayitFormu.Properties.Resources.resources
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\Desktop\WindowsDesktop\KayitFormu\obj\Debug\KayitFormu.csproj.GenerateResource.cache
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\Desktop\WindowsDesktop\KayitFormu\obj\Debug\KayitFormu.csproj.CoreCompileInputs.cache
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\Desktop\WindowsDesktop\KayitFormu\obj\Debug\KayitFormu.exe
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\Desktop\WindowsDesktop\KayitFormu\obj\Debug\KayitFormu.pdb
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\Desktop\WindowsDesktop\KayitFormu\obj\Debug\KayitFormu.exe.config

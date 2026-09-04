@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld", "HelloWorld\He
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hesapla", "hesapla\hesapla.csproj", "{90A3F829-C2B3-4735-9BDD-1C3911D5A57B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KayitFormu", "KayitFormu\KayitFormu.csproj", "{37C11D15-474C-4C73-8C36-6CB296D75F48}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{90A3F829-C2B3-4735-9BDD-1C3911D5A57B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90A3F829-C2B3-4735-9BDD-1C3911D5A57B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90A3F829-C2B3-4735-9BDD-1C3911D5A57B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37C11D15-474C-4C73-8C36-6CB296D75F48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37C11D15-474C-4C73-8C36-6CB296D75F48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37C11D15-474C-4C73-8C36-6CB296D75F48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37C11D15-474C-4C73-8C36-6CB296D75F48}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

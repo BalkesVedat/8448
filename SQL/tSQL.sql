@@ -18,6 +18,30 @@ DROP : Nesneleri Silmek için kullanýlýr.
 DROP Nesne_Tipi Nesne_Adi
 DROP TABLE Musteriler
 
+--------------------------------------------------------------
+
+DML : Data Manipulation Language - Veri üzerinde iþlem yapan komutlar
+INSERT - UPDATE - DELETE
+--------------
+INSERT - EKLEME : VeriTabanýndaki bir tabloya kayýt ekler.
+
+1. INSERT INTO Tablo_Adý (Kolon listesi) VALUES (Veri listesi)  
+2. INSERT INTO Tablo_Adý VALUES (Veri Listesi)
+---------------
+
+DELETE - SÝL : Bir tablodan belirtilen kriterlere uyan kayýtlarý siler. 
+***ÖNEMLÝ : Kriter belirtilmezse tablodaki tüm kayýtlarý siler.
+
+DELETE FROM Tablo_Adý WHERE Kriterler
+---------------
+
+UPDATE - GÜNCELLE : Bir tablodaki kriterlere uyan kayýtlarýn verilerini günceller. 
+***ÖNEMLÝ : Kriter belirtilmezse tablodaki tüm kayýtlar yeni deðerlerle güncellenir.
+
+UPDATE Tablo_Adý SET Kolon1_adý = yeni_deðeri, kolon2_adý = yeni_deðeri, ..... WHERE Kriterler
+
+
+
 */
 
 --CREATE DATABASE ABC
@@ -60,3 +84,38 @@ GO
 
 --ALTER TABLE Yemekler
 --	ADD Kalorisi int 
+
+--ALTER TABLE Yemekler
+--	ADD CONSTRAINT PK_Yemekler PRIMARY KEY CLUSTERED (YemekID ASC)     
+
+--------------------------------------------------------
+-------------  DML -------------------------------------
+--------------------------------------------------------
+
+--INSERT INTO Musteriler (MusteriAdSoyad) VALUES ('Ahmet Ak')
+
+--INSERT INTO Musteriler 
+--(MusteriAdSoyad, MusteriEmail) 
+--VALUES 
+--('Korkmaz Ticaret', 'abc@korkmaz.com');
+
+--INSERT INTO Musteriler 
+--VALUES
+--('Ayþe Pak', NULL, 1, NULL)
+
+--INSERT INTO Yemekler
+--([YemekAdi],[Malzemeler],[KayitTarihi],[Tarifi],[Kalorisi])
+--VALUES
+--('Kuru Fasülye','Fasülye, su, tuz, karabiber, tereyað', getdate(), 'fdsfsdfsf',400)
+
+---------------------------------------------------------------------
+
+--DELETE FROM Musteriler WHERE MusteriID = 7
+--DELETE FROM Musteriler WHERE AktifMi = 0 OR AktifMi is NULL
+--DELETE FROM Musteriler WHERE MusteriEmail is NULL
+
+-----------------------------------------------------------------------
+
+--UPDATE Musteriler SET MusteriEmail = 'aaa@bbb.com' WHERE MusteriID = 9
+--UPDATE Musteriler SET AktifMi = 1 WHERE AktifMi is NULL
+

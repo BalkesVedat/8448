@@ -20,8 +20,8 @@ DROP TABLE Musteriler
 
 --------------------------------------------------------------
 
-DML : Data Manipulation Language - Veri üzerinde iþlem yapan komutlar
-INSERT - UPDATE - DELETE
+DML : Data Manipulation Language - Veri üzerinde iþlem yapan komutlar (CRUD)
+INSERT - UPDATE - DELETE - SELECT
 --------------
 INSERT - EKLEME : VeriTabanýndaki bir tabloya kayýt ekler.
 
@@ -40,6 +40,11 @@ UPDATE - GÜNCELLE : Bir tablodaki kriterlere uyan kayýtlarýn verilerini güncelle
 
 UPDATE Tablo_Adý SET Kolon1_adý = yeni_deðeri, kolon2_adý = yeni_deðeri, ..... WHERE Kriterler
 
+----------------------
+
+SELECT - SEÇ - QUERY - SORGU  : Tablolardan veri sorgulayarak istenilen verileri çekmek için kullanýlýr.
+
+SELECT alan_listesi FROM tablo_adý WHERE filtre_ifadesi 
 
 
 */
@@ -119,3 +124,14 @@ GO
 --UPDATE Musteriler SET MusteriEmail = 'aaa@bbb.com' WHERE MusteriID = 9
 --UPDATE Musteriler SET AktifMi = 1 WHERE AktifMi is NULL
 
+--------------------------------------------------------------------------
+
+----------------   SELECT ------------------------------------------------
+
+--SELECT [YemekAdi],[Malzemeler],[Tarifi],[Kalorisi] FROM [Yemekler]
+
+SELECT [MusteriAdSoyad],[MusteriEmail],[AktifMi],[MusteriAdresi] FROM Musteriler WHERE AktifMi = 1
+
+--UPDATE Musteriler SET AktifMi = 0 WHERE MusteriAdSoyad = 'Ayþe Pak'
+
+SELECT * FROM Musteriler 

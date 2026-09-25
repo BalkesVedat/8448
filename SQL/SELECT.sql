@@ -1,3 +1,19 @@
+USE TarifSepetiDB
+GO
+
+SELECT * FROM Siparisler
+
+SELECT COUNT(*) AS 'Sipariþ Adedi' FROM Siparisler
+
+SELECT * FROM Siparisler WHERE Durumu <> '9'
+
+SELECT COUNT(*) AS 'Teslim Edilmemiþ Sipariþler' FROM Siparisler WHERE Durumu <> '9'
+
+SELECT YemekID, COUNT(*) AS 'Sipariþ Adedi' FROM Siparisler GROUP BY YemekID
+
+SELECT Y.YemekAdi, COUNT(*) 'Sipariþ Adedi' FROM Siparisler S JOIN Yemekler Y ON S.YemekID = Y.YemekID WHERE Durumu <> 8 GROUP BY YemekAdi ORDER BY YemekAdi
+
+
 USE Northwind
 GO
 
@@ -69,3 +85,9 @@ SELECT UrunAdi, SUM([Satis Detaylari].BirimFiyati * Miktar)  AS 'Toplam Ciro' FR
 GROUP BY UrunAdi
 
 --TODO: ÖDEV : Müþteriye Göre Satýþ Toplamlarý raporunu yap.
+
+Select TOP 5  MusteriAdi, SUM(SD.Miktar * SD.BirimFiyati) AS 'Tutar' From Musteriler M 
+JOIN Satislar S ON M.MusteriID = s.MusteriID 
+Join [Satis Detaylari] SD ON S.SatisID = SD.SatisID
+GROUP BY MusteriAdi
+ORDER BY 'Tutar' DESC

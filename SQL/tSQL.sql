@@ -113,6 +113,15 @@ GO
 --VALUES
 --('Kuru Fasülye','Fasülye, su, tuz, karabiber, tereyað', getdate(), 'fdsfsdfsf',400)
 
+
+--INSERT INTO Siparisler VALUES (GETDATE(),9,1,5,1)
+--INSERT INTO Siparisler VALUES ('2026-09-24',9,2,2,9)
+--INSERT INTO Siparisler VALUES ('2025-08-17',10,2,4,8)
+--INSERT INTO Siparisler VALUES ('2025-10-13',10,1,8,9)
+--INSERT INTO Siparisler VALUES (GETDATE(),9,1,3,9)
+
+
+
 ---------------------------------------------------------------------
 
 --DELETE FROM Musteriler WHERE MusteriID = 7

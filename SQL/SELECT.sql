@@ -68,6 +68,14 @@ SELECT Unvan, COUNT(Unvan) 'Ünvan Sayýsý'  FROM Personeller GROUP BY Unvan
 --JOIN
 -- DB deki tablolarý, ortak alanlarý üzerinden birbirine birleþtirir. Birleþtirdiðimiz tablolarýn alanlarýný SELECT listesine ekleyebiliriz. Tablolarýn hangi ortak alanlarý üzerinden birbirine baðlayacaðýmýzý 'ON' ifadesinden sonra yazýyoruz.
 
+--SELECT * FROM Tablo1 .... JOIN Tablo2 ON Tablo1.ID = Tablo2.ID 
+-- (INNER) JOIN : Her 2 tabloda da bulunan ve eþleþen kayýtlar listelensin.
+-- RIGHT (OUTER) JOIN :  ON ifadesinden sonra eþitliðin saðýnda bulunan (Tablo2) tablodaki tüm kayýtlar listelensin. (Soldaki tabloda onlarla eþleþen kayýtlar olmasa dahi listelenir.)
+-- LEFT (OUTER) JOIN  :  ON ifadesinden sonra eþitliðin solunda bulunan (Tablo1) tablodaki tüm kayýtlar listelensin. (Saðdaki tabloda onlarla eþleþen kayýtlar olmasa dahi listelenir.)
+-- FULL (OUTER) JOIN  : Eþleþtirilen tablolardan tüm kayýtlar listelensin. Bir tarafta olup, diðer tarafta olmayan kayýtlar da gösterilsin.
+
+
+-- Ürünlerin Kategori isimleri kategoriler tablosundan ve tedarikçi bilgileri ise tedarikçiler tablosundan join lenerek çekildi.
 SELECT UrunAdi AS 'Ürün', kategoriAdi AS 'Kategori', SirketAdi AS 'Tedarikçi Firma', Ulke
 FROM Urunler 
 JOIN Kategoriler ON Urunler.KategoriID = Kategoriler.KategoriID
@@ -75,19 +83,37 @@ JOIN Tedarikciler ON Urunler.TedarikciID = Tedarikciler.TedarikciID
 
 -----------------------------------
 
-SELECT UrunAdi, SUM(Miktar) AS 'Satýlan Adet', SUM([Satis Detaylari].BirimFiyati * Miktar) AS 'Ciro'  FROM Urunler
+-- Ürünlerin Tüm Satýþ Toplamlarý (Hiç satýlmamýþ ürünler hariç. Hiç satýlmamýþ ürünleri de listede görmek isteseydik o zaman bu sorgu için LEFT JOIN yazmalýydýk.)
+SELECT UrunAdi, SUM(Miktar) AS 'Satýlan Adet', SUM([Satis Detaylari].BirimFiyati * Miktar) AS 'Ciro'  
+FROM Urunler
 JOIN [Satis Detaylari] ON Urunler.UrunID = [Satis Detaylari].UrunID
-JOIN Satislar ON [Satis Detaylari].SatisID = Satislar.SatisID
 GROUP BY UrunAdi
 ORDER BY UrunAdi
 ------------------------------------
-SELECT UrunAdi, SUM([Satis Detaylari].BirimFiyati * Miktar)  AS 'Toplam Ciro' FROM [Satis Detaylari] JOIN Urunler ON [Satis Detaylari].UrunID = Urunler.UrunID
+
+--Ürüne göre satýþ detaylarýnýn tutara göre büyükten-küçüðe sýralý listesi
+SELECT UrunAdi, COUNT(Miktar) AS 'Sipariþ Sayýsý', SUM(Miktar) AS 'Adet', SUM([Satis Detaylari].BirimFiyati * Miktar)  AS 'Toplam Ciro' FROM [Satis Detaylari] 
+RIGHT OUTER JOIN Urunler ON [Satis Detaylari].UrunID = Urunler.UrunID
 GROUP BY UrunAdi
+ORDER BY 'Toplam Ciro' DESC
 
---TODO: ÖDEV : Müþteriye Göre Satýþ Toplamlarý raporunu yap.
-
-Select TOP 5  MusteriAdi, SUM(SD.Miktar * SD.BirimFiyati) AS 'Tutar' From Musteriler M 
-JOIN Satislar S ON M.MusteriID = s.MusteriID 
-Join [Satis Detaylari] SD ON S.SatisID = SD.SatisID
+-- Müþteriye Göre Satýþ Toplamlarý raporunu (Tutara göre azalan sýralý)
+Select  MusteriAdi, SUM(SD.Miktar * SD.BirimFiyati) AS 'Tutar' From Musteriler M 
+LEFT JOIN Satislar S ON M.MusteriID = S.MusteriID 
+LEFT joIn [Satis Detaylari] SD ON S.SatisID = SD.SatisID
 GROUP BY MusteriAdi
 ORDER BY 'Tutar' DESC
+
+------------------------------------------------------------
+-- Þimdiye kadar hiç satýlmamýþ ürünlerimizin listesi.
+SELECT * FROM Urunler U LEFT OUTER JOIN [Satis Detaylari] SD ON U.UrunID = SD.UrunID  
+WHERE SD.UrunID is NULL
+-------------------------------------------------------------
+-- Þimdiye kadar hiç alýþveriþ yapmamýþ müþteriler.
+SELECT * FROM Musteriler LEFT JOIN Satislar ON Musteriler.MusteriID = Satislar.MusteriID
+WHERE Satislar.MusteriID is null
+
+
+
+
+

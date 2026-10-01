@@ -113,7 +113,64 @@ WHERE SD.UrunID is NULL
 SELECT * FROM Musteriler LEFT JOIN Satislar ON Musteriler.MusteriID = Satislar.MusteriID
 WHERE Satislar.MusteriID is null
 
+---------------------------
+--- UNION - BÝRLEÞTÝR
+---------------------------
+--Ayný sayýda ve ayný kolon yapýsýnda veri döndüren 2 farklý SELECT cümlesinden dönen verileri birleþtirerek tek liste olarak verir.
+
+SELECT UrunID,UrunAdi,0 AS 'BirimFiyati' FROM Urunler WHERE KategoriID = 5
+UNION
+SELECT UrunID,UrunAdi,BirimFiyati FROM Urunler WHERE KategoriID = 7
 
 
+-------
+SELECT * FROM Urunler WHERE KategoriID in (5,7)
+----------------------
+ 
+ ----------------------------
+ -- SUBQUERY --
+ -- Bir SELECT sorgusu veriyi bir tablodan, bir Viewdan ya da baþka bir SELECT sorgusunun döndürdüðü veriden çekebilir. Veri almak için kullanýlan alt sorguya SubQuery (AltSorgu) denir. Alt sorgunun kendisi de bir SELECT cümlesidir. Alt sorguya verilen isim onu kullanan üst sorguda bir tablo gibi kullanýlýr.
 
+ -- SELECT * FROM ( ALT Sorgu ) AS AltSorguÝsmi 
 
+ --CREATE VIEW xxxxxxxxxx
+ --AS
+ SELECT COUNT(UrunAdi) AS 'Toplam Kayýt Sayýsý', SUM(BirimFiyati) AS 'Toplam Ciro' FROM 
+ (
+	-- Alt Sorgu T
+	SELECT UrunID,UrunAdi,0 AS 'BirimFiyati' FROM Urunler WHERE KategoriID = 5
+	UNION
+	SELECT UrunID,UrunAdi,BirimFiyati FROM Urunler WHERE KategoriID = 7 
+) AS T
+
+------------------------------
+
+SELECT TOP 10 * FROM 
+(
+	-- SubQuery MusteriSatislari
+	Select  MusteriAdi, SUM(SD.Miktar * SD.BirimFiyati) AS 'Tutar' From Musteriler M 
+	LEFT JOIN Satislar S ON M.MusteriID = S.MusteriID 
+	LEFT JOIN [Satis Detaylari] SD ON S.SatisID = SD.SatisID
+	GROUP BY MusteriAdi
+) MusteriSatislari
+--WHERE Tutar > 50000
+ ORDER BY Tutar DESC
+
+ -------------------------
+
+ CREATE VIEW UruneGoreSatisToplamlari
+ AS
+ SELECT UrunAdi, COUNT(Miktar) AS 'Sipariþ Sayýsý', SUM(Miktar) AS 'Adet', SUM([Satis Detaylari].BirimFiyati * Miktar)  AS 'Toplam Ciro' FROM [Satis Detaylari] 
+RIGHT OUTER JOIN Urunler ON [Satis Detaylari].UrunID = Urunler.UrunID
+GROUP BY UrunAdi
+------------------------------------
+ ALTER VIEW UruneGoreSatisToplamlari
+ AS
+ SELECT UrunAdi, COUNT(Miktar) AS 'Sipariþ Adedi', SUM(Miktar) AS 'Adet', SUM([Satis Detaylari].BirimFiyati * Miktar)  AS 'Toplam Ciro' FROM [Satis Detaylari] 
+RIGHT OUTER JOIN Urunler ON [Satis Detaylari].UrunID = Urunler.UrunID
+GROUP BY UrunAdi
+-------------------------------------------
+DROP VIEW UruneGoreSatisToplamlari
+
+-----------------------------------------
+select TOP 10 * from [dbo].[UruneGoreSatisToplamlari] ORDER BY [Toplam Ciro] DESC

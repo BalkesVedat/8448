@@ -49,7 +49,6 @@ SELECT * FROM Urunler ORDER BY UrunAdi DESC --  Z-->A sýralar.
 
 SELECT * FROM Satislar ORDER BY SatisTarihi DESC --  Yeniden eskiye doðru sýralar.
 
-
 -- GROUP BY
 -- Listelenen verileri gruplayarak gösterir.
 

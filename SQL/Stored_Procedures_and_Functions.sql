@@ -192,3 +192,5 @@ GO
 --	PRINT TRIM(Str(@ID)) + ' Koduna Sahip Ürün Bulunamadý'
 --	PRINT CONVERT(varchar(10), @ID) + ' Koduna Sahip Ürün Bulunamadý' 
 -------------------------------------------------------------------------
+
+

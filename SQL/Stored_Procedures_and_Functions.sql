@@ -8,7 +8,7 @@ GO
 
 --CREATE PROC [dbo].[SP_Musteri_Listesi]
 --AS 
---SELECT * FROM Musteriler
+--SELECT [MusteriID],[SirketAdi],[MusteriAdi],[MusteriUnvani],[Adres],[Sehir],[Bolge],[PostaKodu],[Ulke],[Telefon],[Faks]  FROM [dbo].[Musteriler]
 
 --EXECUTE SP_Musteri_Listesi
 

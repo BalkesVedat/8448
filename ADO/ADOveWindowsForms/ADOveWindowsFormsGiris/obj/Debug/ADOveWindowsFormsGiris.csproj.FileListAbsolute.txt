@@ -1,0 +1,11 @@
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\ADO\ADOveWindowsForms\ADOveWindowsFormsGiris\bin\Debug\ADOveWindowsFormsGiris.exe.config
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\ADO\ADOveWindowsForms\ADOveWindowsFormsGiris\bin\Debug\ADOveWindowsFormsGiris.exe
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\ADO\ADOveWindowsForms\ADOveWindowsFormsGiris\bin\Debug\ADOveWindowsFormsGiris.pdb
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\ADO\ADOveWindowsForms\ADOveWindowsFormsGiris\obj\Debug\ADOveWindowsFormsGiris.csproj.AssemblyReference.cache
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\ADO\ADOveWindowsForms\ADOveWindowsFormsGiris\obj\Debug\ADOveWindowsFormsGiris.FrmRapor.resources
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\ADO\ADOveWindowsForms\ADOveWindowsFormsGiris\obj\Debug\ADOveWindowsFormsGiris.Properties.Resources.resources
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\ADO\ADOveWindowsForms\ADOveWindowsFormsGiris\obj\Debug\ADOveWindowsFormsGiris.csproj.GenerateResource.cache
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\ADO\ADOveWindowsForms\ADOveWindowsFormsGiris\obj\Debug\ADOveWindowsFormsGiris.csproj.CoreCompileInputs.cache
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\ADO\ADOveWindowsForms\ADOveWindowsFormsGiris\obj\Debug\ADOveWindowsFormsGiris.exe
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\ADO\ADOveWindowsForms\ADOveWindowsFormsGiris\obj\Debug\ADOveWindowsFormsGiris.pdb
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\ADO\ADOveWindowsForms\ADOveWindowsFormsGiris\obj\Debug\ADOveWindowsFormsGiris.exe.config

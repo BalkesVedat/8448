@@ -58,6 +58,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>NorthwindDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="NorthwindDataSet_Kategoriler.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NorthwindDataSet_Kategoriler.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NorthwindDataSet_Tedarikciler.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NorthwindDataSet_Tedarikciler.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -82,6 +92,28 @@
     </None>
     <None Include="NorthwindDataSet.xss">
       <DependentUpon>NorthwindDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="NorthwindDataSet_Kategoriler.xsc">
+      <DependentUpon>NorthwindDataSet_Kategoriler.xsd</DependentUpon>
+    </None>
+    <None Include="NorthwindDataSet_Kategoriler.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NorthwindDataSet_Kategoriler.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NorthwindDataSet_Kategoriler.xss">
+      <DependentUpon>NorthwindDataSet_Kategoriler.xsd</DependentUpon>
+    </None>
+    <None Include="NorthwindDataSet_Tedarikciler.xsc">
+      <DependentUpon>NorthwindDataSet_Tedarikciler.xsd</DependentUpon>
+    </None>
+    <None Include="NorthwindDataSet_Tedarikciler.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NorthwindDataSet_Tedarikciler.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NorthwindDataSet_Tedarikciler.xss">
+      <DependentUpon>NorthwindDataSet_Tedarikciler.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -1,0 +1,11 @@
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\ADO\WindowsFormsOOP\WindowsFormsOOP\bin\Debug\WindowsFormsOOP.exe.config
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\ADO\WindowsFormsOOP\WindowsFormsOOP\bin\Debug\WindowsFormsOOP.exe
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\ADO\WindowsFormsOOP\WindowsFormsOOP\bin\Debug\WindowsFormsOOP.pdb
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\ADO\WindowsFormsOOP\WindowsFormsOOP\obj\Debug\WindowsFormsOOP.csproj.AssemblyReference.cache
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\ADO\WindowsFormsOOP\WindowsFormsOOP\obj\Debug\WindowsFormsOOP.Form1.resources
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\ADO\WindowsFormsOOP\WindowsFormsOOP\obj\Debug\WindowsFormsOOP.Properties.Resources.resources
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\ADO\WindowsFormsOOP\WindowsFormsOOP\obj\Debug\WindowsFormsOOP.csproj.GenerateResource.cache
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\ADO\WindowsFormsOOP\WindowsFormsOOP\obj\Debug\WindowsFormsOOP.csproj.CoreCompileInputs.cache
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\ADO\WindowsFormsOOP\WindowsFormsOOP\obj\Debug\WindowsFormsOOP.exe
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\ADO\WindowsFormsOOP\WindowsFormsOOP\obj\Debug\WindowsFormsOOP.pdb
+C:\Users\ARIBILGI\Desktop\ÖĞRETMEN YEDEK\VEDAT HOCA\SALI-PERŞEMBE-8448\ADO\WindowsFormsOOP\WindowsFormsOOP\obj\Debug\WindowsFormsOOP.exe.config

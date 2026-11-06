@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Merhaba Dünya!</title>
+</head>
+
+
+<body>
+    <header>
+        Web sitemize hoş geldiniz.
+    </header>
+
+
+
+
+    <h1>HTML Nedir?</h1>
+    <hr />
+    <p>
+        HTML - Hyper Text Markup Language - Zengin Metin İşaretleme Dilidir. 		İçeriği işaretlemek için kullanılan komutlara <strong>TAG</strong> denir.
+        ve < TAG_adı > ..... < /TAG_adı > şeklinde yazılır ve çoğu tag ( işareti 		ile kapatılır. Bu 2 tag işareti arasında kalan içerik istenen işlem için 		biçimlendirilir.
+    </p>
+
+
+    <h1>Başlık Stilleri </h1>
+    <hr />
+    <p>
+        6 tane hazır başlık <span>(header)</span> tipi vardır.
+        h1-h6 arasında isimlendirilir. < h1 >başlık metni < /h1 >
+        şeklinde yazılır.
+    </p>
+
+    <h1>Hello World!.....</h1>
+    <h2>Hello World!.....</h2>
+    <h3>Hello World!.....</h3>
+    <h4>Hello World!.....</h4>
+    <h5>Hello World!.....</h5>
+    <h6>Hello World!.....</h6>
+    <hr />
+
+    <h1>Paragraf</h1> <hr />
+    <p>Paragraf oluşturmak için < p > tag'i kullanılır ve < p > .... < /p > şeklinde yazılır.  </p>
+
+    <p>Burası <u><b><i>1.</i></b></u> paragraf....</p>
+    <p>Bu da <em>2.</em> paragraf   </p>
+    <p>Bu da <strong>3.</strong> paragraf   </p>
+
+    <h1> Madde işaretli listeler </h1>
+    <hr />
+    <p> Maddelerden oluşan bir liste yapmak için kullanılır. 		Maddeler, madde işaretleri ya da numaralar ile 		işaretlenebilir. Menü yaparken de bu tag'ler kullanılabilir. 		Eğer numaralandırılmış sıralı liste yapmak istersek < ol > 		tag'i, sırasız liste yapmak istersek < ul > tag'i kullanılır. 		her bir madde ise < li > ..... < /li > şeklinde girilir.    		</p>
+
+    <h2>Sıralı Liste (Numaralandırılmış liste)</h2>
+    <ol>
+        <li>Kalem </li>
+        <li>Defter </li>
+        <li>Silgi </li>
+        <li>Kalemtraş </li>
+        <li>Bardak </li>
+    </ol>
+
+
+    <h2>Sırasız Liste (Madde işaretli liste)</h2>
+    <ul>
+        <li>Kalem </li>
+        <li>Defter </li>
+        <li>Silgi </li>
+        <li>Kalemtraş </li>
+        <li>Bardak </li>
+    </ul>
+
+    <h1> Resim Ekleme </h1>
+    <hr />
+    <img src="images/html.png" width="102px" height="96px" />
+    <img src="images/html.png" width="102px" height="96px" />
+    <img src="images/html.png" width="102px" height="96px" />
+    <img src="images/html.png" width="102px" height="96px" />
+    <img src="images/html.png" width="102px" height="96px" />
+
+    <p> test </p>
+    <p> test </p>
+    <p> test </p>
+
+
+    <h1> Tablo </h1>
+    <hr />
+    <table border="1" width="50%" align="center">
+        <tr>
+            <th>1,1</th>
+            <th>1,2</th>
+            <th>1,3</th>
+        </tr>
+
+        <tr>
+            <td>2,1</td>
+            <td>2,2</td>
+            <td>2,3</td>
+        </tr>
+
+        <tr>
+            <td>3,1</td>
+            <td>3,2</td>
+            <td>3,3</td>
+        </tr>
+
+        <tr>
+            <td>4,1</td>
+            <td>4,2</td>
+            <td>4,3</td>
+        </tr>
+
+    </table>
+
+    <h1>Div - stil ayarları daha sonra yapılacak</h1>
+    <hr />
+    <div>
+        div 1
+    </div>
+
+    <div>
+        div 2
+    </div>
+
+    <div>
+        div 3
+    </div>
+
+    <h1> Form ve input nesneleri </h1>
+    <hr />
+    <p>
+        HTML sayfalarında veri girişi için kullanılan kapsayıcı
+        ve onun içerisine konan girdi elementleri
+    </p>
+
+    <form enctype="multipart/form-data">
+        <label>Ad Soyad &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : </label>
+        <input type="text" name="txtNameSurname" id="txtNameSurname" placeholder="Adınızı ve Soyadınızı Giriniz" />
+        <br />
+        <label>Doğum Tarihiniz &nbsp;&nbsp;: </label>
+        <input type="date" name="tarih" id="tarih" />
+        <br />
+        <label>Diploma Notunuz : </label>
+        <input type="number" name="puan" id="puan" min="0" max="100" />
+        <br />
+        <label>Mezuniyet</label>
+        <input type="radio" title="İlkokul" name="mezuniyet" id="ilkokul" /> <label>İlkokul</label>
+        <input type="radio" title="Ortaokul" name="mezuniyet" id="ortaokul" /><label>Ortaokul</label>
+        <input type="radio" checked="checked" title="Lise" name="mezuniyet" id="Lise" /><label>Lise</label>
+        <input type="radio" title="Üniversite" name="mezuniyet" id="Universite" /><label>Üniversite</label>
+        <input type="radio" title="Master/Doktora" name="mezuniyet" id="MasterDoktora" /><label>Master/Doktora</label>
+        <br />
+        <label>Uyruğu</label>
+        <select>
+            <option selected="selected">Türkiye</option>
+            <option>Amerika</option>
+            <option>Almanya</option>
+            <option>Kanada</option>
+            <option>Diğer</option>
+        </select>
+        <br />
+        <label>Email :</label>
+        <input type="email" name="email" id="email" placeholder="example@xxx.com" />
+        <br />
+        <label>Özgeçmiş (CV) dosyası : </label>
+        <input type="file" name="file" id="file" title="CV dosyası" />
+        <br />
+        <input type="submit" title="Tıkla" value="Tıkla" id="submit" />
+
+
+    </form>
+    <hr />
+    <button title="Tıkla" id="button">Bu bir Button</button>
+
+    <br />
+    <hr />
+
+    <footer>
+        &copy;2026 8448Soft. Her haklı saklıdır.
+        <a href="https://www.aribilgi.com">Gizlilik</a>
+        <a href="https://www.google.com">Kullanım Koşulları</a>
+        <a href="https://www.w3schools.com"><img src="images/html.png" width="26px" height="24px" /> </a>
+
+    </footer>
+
+    <hr />
+
+
+</body>
+
+</html>

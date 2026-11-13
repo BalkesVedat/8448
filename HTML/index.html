@@ -3,12 +3,84 @@
 <html>
 <head>
     <title>Merhaba Dünya!</title>
+    <link href="site.css" rel="stylesheet" type="text/css" />
+
+    <!-- Internal Stil tanımı  -->
+    <style>
+        /*
+            lfk jşslfslkf şis lfdş
+        */
+
+
+
+        h1 { color:red;   }
+        
+        p {
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 0px 10px 0px 10px;
+        }
+
+        #div1 {
+            background-color: #FCC;
+        }
+
+        #div2 {
+            background-color: #CFC;
+        }
+
+        #div3 {
+            background-color: #CCF;
+        }
+
+        .renkliDivler {
+            height: 100px;
+            width: 33.33%;
+            display: inline-block;
+            border: 0px;
+            padding: 0px;
+            font-size: large
+        }
+
+        a {
+            text-decoration:none;
+            color:lightgray;
+            margin:0px 20px 0px 20px;
+            border:2px solid black;
+            padding:10px;
+            border-radius:20px;
+            background-color:#888;
+        }
+
+            a:hover {
+                background-color:#555;
+            
+            }
+
+        #malzeme>li {
+            list-style:square;      
+        }
+
+    </style>
 </head>
 
 
-<body>
+<body style="margin:0px;">
     <header>
-        Web sitemize hoş geldiniz.
+        <div class="container">
+            <div id="logoDiv">
+                <img id="logoImg" src="images/html.png" />
+
+            </div>
+
+            <div id="menuDiv">
+                <ol>
+                    <li>Ana Sayfa</li>
+                    <li>Hakkımızda</li>
+                    <li>Ürünler</li>
+                    <li>İletişim</li>
+                </ol>
+            </div>
+        </div>
     </header>
 
 
@@ -50,7 +122,7 @@
     <p> Maddelerden oluşan bir liste yapmak için kullanılır. 		Maddeler, madde işaretleri ya da numaralar ile 		işaretlenebilir. Menü yaparken de bu tag'ler kullanılabilir. 		Eğer numaralandırılmış sıralı liste yapmak istersek < ol > 		tag'i, sırasız liste yapmak istersek < ul > tag'i kullanılır. 		her bir madde ise < li > ..... < /li > şeklinde girilir.    		</p>
 
     <h2>Sıralı Liste (Numaralandırılmış liste)</h2>
-    <ol>
+    <ol id="malzeme">
         <li>Kalem </li>
         <li>Defter </li>
         <li>Silgi </li>
@@ -110,19 +182,44 @@
 
     </table>
 
-    <h1>Div - stil ayarları daha sonra yapılacak</h1>
+    <h1>Div - stil ayarları inline olarak yapıldı.</h1>
     <hr />
-    <div>
-        div 1
+
+    <div style="font-size:0px">
+        <div id="div1" class="renkliDivler">
+            <p>div 1</p>
+        </div>
+
+        <div id="div2" class="renkliDivler">
+            <p>div 2</p>
+        </div>
+
+        <div id="div3" class="renkliDivler">
+            <p>div 3</p>
+        </div>
+
     </div>
 
-    <div>
-        div 2
+    <div style="display:flex;justify-content:space-between;width:100%;">
+        <div style="background-color: #F00; height: 50px; width: 20%; ">
+            <p>div 1</p>
+        </div>
+
+        <div style="background-color: #0F0; height: 50px; width: 20%;">
+            <p>div 2</p>
+        </div>
+
+        <div style="background-color: #00F; height: 50px; width: 20%; ">
+            <p>div 3</p>
+        </div>
+        <div style="background-color: #0FF; height: 50px; width: 20%; ">
+            <p>div 4</p>
+        </div>
+        <div style="background-color: #FF0; height: 50px; width: 20%; ">
+            <p>div 5</p>
+        </div>
     </div>
 
-    <div>
-        div 3
-    </div>
 
     <h1> Form ve input nesneleri </h1>
     <hr />
@@ -177,7 +274,7 @@
         &copy;2026 8448Soft. Her haklı saklıdır.
         <a href="https://www.aribilgi.com">Gizlilik</a>
         <a href="https://www.google.com">Kullanım Koşulları</a>
-        <a href="https://www.w3schools.com"><img src="images/html.png" width="26px" height="24px" /> </a>
+        <a id="w3a" href="https://www.w3schools.com"><img id="w3img" src="images/html.png" /> </a>
 
     </footer>
 
